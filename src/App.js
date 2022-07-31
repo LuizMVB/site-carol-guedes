@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/material';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+import mainTheme from './mainTheme';
+import RotasService from './services/RotasService';
+
+import Home from './pages/Home';
+import CGBotoesContato from './componentes/CGBotoesContato';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={mainTheme}>
+      <BrowserRouter>
+        <CGBotoesContato></CGBotoesContato>
+        <Routes>
+          <Route path={RotasService.Internas.PADRAO} element={<Home/>}></Route>
+          <Route path="*" element={<Navigate to={RotasService.Internas.PADRAO} replace/>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
