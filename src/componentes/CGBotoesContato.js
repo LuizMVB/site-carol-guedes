@@ -1,52 +1,44 @@
-import { useState } from 'react';
+import { Facebook, Instagram, Message } from "@mui/icons-material";
+import { Fab, Grow } from "@mui/material";
+import { useState } from "react";
+import RotasService from "../services/RotasService";
 
-import { Fab, Grow, Stack } from '@mui/material';
-import { Message, Instagram, Facebook } from '@mui/icons-material';
+const BotoesContato = () => {
 
-import RotasService from '../services/RotasService';
-
-const CGBotoesContato = () => {
     const [isOpenOpcoesContato, openOpcoesContato] = useState(false);
 
-    return (
-        <Stack
-            position="fixed"
-            direction="column"
-            justifyContent="flex-end"
-            alignItems="flex-end"
-            sx={{ width: "98%", height: "85%", zIndex: 1 }}
-            spacing={2}
+    return <>
+        <Grow
+            in={isOpenOpcoesContato}
+            style={{ transformOrigin: '10 1000 0' }}
+            timeout={!isOpenOpcoesContato ? 1000 : 3000}
         >
-            <Grow in={isOpenOpcoesContato}
-                style={{ transformOrigin: '0 1000 0' }}
-                timeout={isOpenOpcoesContato ? 2000 : 1000}
+            <Fab 
+                sx={{position: 'fixed', bottom: 240, right: 10}}
+                aria-label="like" 
+                color="warning" 
+                href={RotasService.Externas.INSTAGRAM}
             >
-                <Fab 
-                    aria-label="like" 
-                    color="warning" 
-                    href={RotasService.Externas.INSTAGRAM}
-                >
-                    <Instagram />
-                </Fab>
-            </Grow>
-            <Grow
-                in={isOpenOpcoesContato}
-                style={{ transformOrigin: '10 1000 0' }}
-                timeout={!isOpenOpcoesContato ? 2000 : 1000}
-            >
-                <Fab 
-                    aria-label="like" 
-                    color="secondary" 
-                    href={RotasService.Externas.FACEBOOK}
-                >
-                    <Facebook />
-                </Fab>
-            </Grow>
-            <Fab aria-label="like" color="primary" onClick={() => openOpcoesContato(!isOpenOpcoesContato)}>
-                <Message aria-describedby="contatos" />
+                <Instagram />
             </Fab>
-        </Stack>
-    )
+        </Grow>
+        <Grow
+            in={isOpenOpcoesContato}
+            style={{ transformOrigin: '10 1000 0' }}
+            timeout={!isOpenOpcoesContato ? 3000 : 1000}
+        >
+            <Fab 
+                sx={{position: 'fixed', bottom: 160, right: 10}}
+                aria-label="like"
+                href={RotasService.Externas.FACEBOOK}
+            >
+                <Facebook />
+            </Fab>
+        </Grow>
+        <Fab sx={{position: 'fixed', bottom: 80, right: 10}}  aria-label="like" color="primary" onClick={() => openOpcoesContato(!isOpenOpcoesContato)}>
+            <Message aria-describedby="contatos" />
+        </Fab>
+    </>
 }
 
-export default CGBotoesContato;
+export default BotoesContato;

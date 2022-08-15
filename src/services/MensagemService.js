@@ -2,6 +2,8 @@ const data = {
     // PADRÃO
     'padrao.label.nomeProjeto'                  : 'Carol Guedes',
     'padrao.cliqueAqui'                         : 'clique aqui',
+    'padrao.vejaMais'                           : 'veja mais',
+    'padrao.pautas'                             : 'Pautas',
 
     // NAVBAR
     'navbar.link.biografia'                      : 'Biografia',
@@ -18,6 +20,20 @@ const data = {
     'home.destaques.cards.content.bibliotecaEcioSalles'               : 'Colaborou com o projeto e no processo de execução da biblioteca Écio Salles, na Fundação Planetário em parceria com a Secretaria de Cultura do Rio de Janeiro. Sendo essa uma biblioteca para pensar e integrar a cidade',
     'home.destaques.cards.content.projetoPlanetarioMoradoresRua'    : 'Recebeu população de rua no Planetário às sextas-feiras a partir da implantação do projeto “Alcançando as Estrelas” em parceria com a Secretaria Municipal de Assistência Social.',
     'home.label.destaques'                                          : 'Destaques',
+    'home.destaques.cards.title.tercaGratuitaPlanetario'            : 'Planetário reabre com sessões gratuitas às terças',
+    'home.destaques.cards.content.tercaGratuitaPlanetario'          : 'Criou a terça gratuita para gerar acesso a toda população carioca à astronomia, ciências afins e cultura',
+
+    // PAUTAS
+    'pautas.title.turnoIntegralEM'                  : 'Por uma educação de turno integral para o ensino médio',
+    'pautas.description.turnoIntegralEM'            : '◻ Com a inclusão de cursos profissionalizantes no Ensino de Jovens e Adultos; \n◻ Com escolas que atendam os alunos em tempo integral com atividades complementares: esportes, música, dança, línguas e reforço escolar; \n◻ Com o aumento de unidades de escolas técnicas por todo Estado do Rio de Janeiro (Faetec).',
+    'pautas.title.estudoMaes'                       : 'Pelo direito de estudar das mulheres mães',
+    'pautas.description.estudoMaes'                 : '◻ Salas de acolhimento, nas escolas que atendam jovens e adultos, para cuidar dos filhos das estudantes durante o período em que elas estiverem em aulas; \n◻ Com a criação de creches universitárias que acolham os filhos das estudantes durante as aulas.',
+    'pautas.title.educacaoTech'                     : 'Por uma educação inovadora e tecnológica que gere emprego e renda',
+    'pautas.description.educacaoTech'               : '◻ Com a ampliação e atualização dos cursos profissionalizantes para qualificar e inserir nossos jovens no mercado de trabalho.',
+    'pautas.title.educacaoSuperiorInclusiva'        : 'Por uma educação superior inclusiva ',
+    'pautas.description.educacaoSuperiorInclusiva'  : '◻ Com um programa de reforço e suporte estudantil que permita a adaptação dos alunos cotistas à universidade; \n◻ Com acompanhamento médico universitário e assistência social para alunos cotistas e pessoas com deficiência; \n◻ Incentivo fiscal para empresas que contratem universitários cotistas em cargas horárias flexíveis.',
+    'pautas.title.educacaoEMInclusiva'              : 'Por uma educação inclusiva no Ensino Médio',
+    'pautas.description.educacaoEMInclusiva'        : '◻ Com um programa em que as universidades forneçam estagiários para acompanhar alunos com deficiência no nível médio.'
 };
 
 const obterMensagem = (key, ...args) => {

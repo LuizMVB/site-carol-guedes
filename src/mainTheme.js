@@ -4,10 +4,10 @@ const mainTheme = createTheme({
     palette: {
         primary: {
             contrastText: 'white',
-            main: '#6251DA',
+            main: '#1C3879',
         },
         secondary: {
-            main: '#F1FFD9',
+            main: '#607EAA',
         },
         error: {
             main: '#ef476f',
