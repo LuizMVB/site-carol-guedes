@@ -1,4 +1,4 @@
-import { BottomNavigation, BottomNavigationAction, Box, Paper, ThemeProvider } from '@mui/material';
+import { Box, ThemeProvider } from '@mui/material';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import mainTheme from './mainTheme';
@@ -26,7 +26,7 @@ const App = () => {
           <Routes>
             <Route path={RotasService.Internas.HOME} element={<Home/>}></Route>
             <Route path={RotasService.Internas.NOTICIAS} element={<Noticias/>}></Route>
-            {/*<Route path={RotasService.Internas.FALE_COMIGO} element={<FaleComigo/>}></Route>*/}
+            <Route path={RotasService.Internas.FALE_COMIGO} element={<FaleComigo/>}></Route>
             <Route path={RotasService.Internas.PAUTAS} element={<Pautas/>}></Route>
             <Route path="*" element={<Navigate to={RotasService.Internas.HOME} replace/>}></Route>
           </Routes>

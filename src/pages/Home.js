@@ -1,5 +1,5 @@
 import { Send } from "@mui/icons-material";
-import { Button, Card, CardContent, Grid, Link, Paper, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { DeviceFrameset } from "react-device-frameset";
 import Instagram from '../static/images/instagram.jpeg';
@@ -38,11 +38,10 @@ const Home = () => {
                         {msg('home.ajudarNaCampanha')}
                     </Button>
                 </a>
-                
             </Box>
             <Box>
                 <DeviceFrameset device="iPhone 8 Plus" color="black" height="350px" width="250px">
-                    <img src={Instagram} height="355px" width="250px"></img>
+                    <img src={Instagram} alt="imagem não encontrada" height="355px" width="250px"></img>
                 </DeviceFrameset>
             </Box>
         </Stack>

@@ -4,6 +4,11 @@ const data = {
     'padrao.cliqueAqui'                         : 'clique aqui',
     'padrao.vejaMais'                           : 'veja mais',
     'padrao.pautas'                             : 'Pautas',
+    'padrao.enviar'                             : 'Enviar',
+    'padrao.titulo'                             : 'Título',
+    'padrao.entreSeuTituloAqui'                 : 'Digite o título do seu e-mail aqui',
+    'padrao.corpo'                              : 'Corpo do e-mail',
+    'padrao.corpo.defaultValue'                 : 'Olá, Carol Guedes! Eu queria dizer que...',
 
     // NAVBAR
     'navbar.link.biografia'                      : 'Biografia',

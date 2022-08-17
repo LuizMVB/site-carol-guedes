@@ -5,7 +5,6 @@ import { useState } from "react";
 const CGAcordiao = (
     {
         title,
-        call,
         description
     }
 ) => {
@@ -22,7 +21,7 @@ const CGAcordiao = (
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography variant="h4" sx={{ width: '100%', flexShrink: 0 }} color="#f7eded">
+          <Typography variant="h6" sx={{ width: '100%', flexShrink: 0 }} color="#f7eded">
             {title}
           </Typography>
         </AccordionSummary>

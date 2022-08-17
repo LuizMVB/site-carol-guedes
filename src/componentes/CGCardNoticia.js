@@ -1,4 +1,4 @@
-import { Box, Link, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import MensagemService from "../services/MensagemService";
 
 function CGCardNoticia({
@@ -14,7 +14,7 @@ function CGCardNoticia({
     };
     return (
         <Paper sx={estiloCardNoticia} elevation={5}>
-            <img src={imgSrc} width="100%"></img>
+            <img src={imgSrc} alt="imagem não encontrada" width="100%"></img>
             <Typography 
                 variant="h4" 
                 textAlign="center"

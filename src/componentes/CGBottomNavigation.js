@@ -25,7 +25,7 @@ const CGBottomNavigation = () => {
           >
             <BottomNavigationAction value={RotasService.Internas.PAUTAS} label="Pautas" icon={<MenuBook />} />
             <BottomNavigationAction value={RotasService.Internas.HOME} label="Home" icon={<Home />} />
-            {/*<BottomNavigationAction value={RotasService.Internas.FALE_COMIGO} label="Fale Comigo" icon={<Email />} />*/}
+            <BottomNavigationAction value={RotasService.Internas.FALE_COMIGO} label="Fale Comigo" icon={<Email />} />
             <BottomNavigationAction value={RotasService.Internas.NOTICIAS} label="Notícias" icon={<Newspaper />} />
         </BottomNavigation>
       </Paper>
