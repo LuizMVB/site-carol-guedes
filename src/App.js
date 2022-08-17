@@ -16,7 +16,7 @@ const App = () => {
   const estiloDeApresentacao = {
       pb: { xs: 10, sm: 8, md: 10 },
       px: { xs: 2, sm: 8, md: 12 },
-      py: 4, backgroundColor: 'secondary.light'
+      py: 4
   };
 
   return (

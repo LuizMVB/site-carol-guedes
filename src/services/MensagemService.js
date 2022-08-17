@@ -9,6 +9,7 @@ const data = {
     'padrao.entreSeuTituloAqui'                 : 'Digite o título do seu e-mail aqui',
     'padrao.corpo'                              : 'Corpo do e-mail',
     'padrao.corpo.defaultValue'                 : 'Olá, Carol Guedes! Eu queria dizer que...',
+    'padrao.label.faleComigo'                   : 'Fale Comigo',
 
     // NAVBAR
     'navbar.link.biografia'                      : 'Biografia',

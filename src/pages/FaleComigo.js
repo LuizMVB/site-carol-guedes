@@ -19,17 +19,17 @@ const FaleComigo = () => {
         <Box
             component="form"
             sx={{
-                '& .MuiTextField-root': { m: 2, width: '100%' },
+                '& .MuiTextField-root': { m: 2, mb: 3, width: '100%' },
                 pr: 4,
-                px: {sm: 15}
+                px: {sm: 15},
+                mt: {sm: 5}
             }}
             noValidate
             autoComplete="off"
         >
             <Typography variant="h3" textAlign="center" fontWeight={400}>
-                {msg('padrao.label.nomeProjeto')}
+                {msg('padrao.label.faleComigo')}
             </Typography>
-            <br></br>
             <br></br>
             <div>
             <TextField
@@ -40,7 +40,6 @@ const FaleComigo = () => {
                     onChange={(event) => setTitulo(event.target.value)}
                 />
             </div>
-            <br></br>
             <div>
             <TextField
                     id="corpo"
@@ -52,18 +51,14 @@ const FaleComigo = () => {
                     onChange={(event) => setCorpo(event.target.value)}
                 />
             </div>
-            <br></br>
-            <br></br>
             <div> 
-            <Button variant="contained" endIcon={<Send></Send>}
-                    
-                    sx={{ p: 2, ml:2, minWidth: '100%' }}
-                    onClick={() => enviarEmail(titulo, corpo)}>
-                        {msg('padrao.enviar')}
-            </Button>
+                <Button variant="contained" endIcon={<Send></Send>}
+                        
+                        sx={{ p: 2, ml:2, minWidth: '100%' }}
+                        onClick={() => enviarEmail(titulo, corpo)}>
+                            {msg('padrao.enviar')}
+                </Button>
             </div>
-            <br></br>
-            <br></br>
         </Box>
     );
 }
